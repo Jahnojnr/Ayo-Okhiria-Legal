@@ -470,3 +470,361 @@
             margin-bottom: 0.5rem;
         }
     }
+    
+    /* Practice Areas Section Styles */
+    .practice-areas-section {
+        background: var(--white);
+        padding: 4rem 0;
+    }
+
+    /* Practice Cards */
+    .practice-card {
+        background: var(--white);
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 8px;
+        padding: 1.8rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .practice-card:hover {
+        transform: translateY(-5px);
+        border-color: var(--gold);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .practice-card:hover .practice-icon {
+        background: var(--gold);
+        color: var(--black);
+    }
+
+    .practice-icon {
+        width: 60px;
+        height: 60px;
+        background: rgba(212, 175, 55, 0.1);
+        color: var(--gold);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .practice-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 1rem;
+        line-height: 1.3;
+    }
+
+    .practice-description {
+        font-size: 0.85rem;
+        color: var(--gray);
+        line-height: 1.6;
+        margin-bottom: 1.2rem;
+        min-height: 80px;
+    }
+
+    .practice-services {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .practice-services li {
+        font-size: 0.8rem;
+        color: var(--gray);
+        padding: 0.3rem 0;
+        position: relative;
+        padding-left: 1.2rem;
+    }
+
+    .practice-services li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--gold);
+        font-weight: bold;
+    }
+
+    .practice-link {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--gold);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: color 0.2s ease;
+    }
+
+    .practice-link:hover {
+        color: var(--black);
+    }
+
+    /* CTA Banner */
+    .cta-banner {
+        background: linear-gradient(135deg, var(--black) 0%, #2a2a2a 100%);
+        color: var(--white);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .cta-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--white);
+    }
+
+    .cta-text {
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.8);
+        max-width: 600px;
+    }
+
+    .btn-outline-light {
+        border: 1px solid rgba(255,255,255,0.3);
+        color: var(--white);
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+    .btn-outline-light:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: var(--gold);
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+        .practice-card {
+            padding: 1.5rem;
+        }
+        
+        .practice-description {
+            min-height: auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .practice-areas-section {
+            padding: 3rem 0;
+        }
+        
+        .practice-title {
+            font-size: 1.1rem;
+        }
+        
+        .cta-banner {
+            padding: 2rem !important;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .practice-card {
+            padding: 1.2rem;
+        }
+        
+        .practice-icon {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-banner .btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    /* Footer Styles */
+    .footer-section {
+        background: var(--black) !important;
+        color: var(--white);
+    }
+
+    .bg-dark {
+        background: var(--black) !important;
+    }
+
+    /* Brand Section */
+    .brand-symbol-footer {
+        width: 60px;
+        height: 60px;
+        background: var(--gold);
+        color: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        line-height: 1;
+    }
+
+    .brand-symbol-footer .symbol-a {
+        display: block;
+        line-height: 1;
+    }
+
+    .footer-firm-name {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--white);
+        margin: 0;
+    }
+
+    .footer-tagline {
+        font-size: 0.8rem;
+        color: rgba(255,255,255,0.7);
+        line-height: 1.5;
+    }
+
+    /* Reviews */
+    .footer-reviews .stars {
+        color: var(--gold);
+    }
+
+    .footer-reviews .stars i {
+        font-size: 0.9rem;
+    }
+
+    /* Social Icons */
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        background: rgba(255,255,255,0.05);
+        color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .social-icon:hover {
+        background: var(--gold);
+        color: var(--black);
+        transform: translateY(-2px);
+    }
+
+    /* Footer Headings */
+    .footer-heading {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--white);
+        position: relative;
+        padding-bottom: 0.8rem;
+    }
+
+    .footer-heading:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: var(--gold);
+    }
+
+    /* Footer Links */
+    .footer-links li {
+        margin-bottom: 0.6rem;
+    }
+
+    .footer-links a {
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+    }
+
+    .footer-links a:hover {
+        color: var(--gold);
+        padding-left: 5px;
+    }
+
+    /* Contact Info */
+    .contact-icon {
+        color: var(--gold);
+        width: 16px;
+        margin-top: 2px;
+    }
+
+    .contact-info-footer .text-gray {
+        color: rgba(255,255,255,0.7) !important;
+    }
+
+    .contact-info-footer a.text-gray:hover {
+        color: var(--gold) !important;
+    }
+
+    .text-gold {
+        color: var(--gold) !important;
+    }
+
+    /* Divider */
+    .footer-divider {
+        border-color: rgba(255,255,255,0.1) !important;
+        margin: 2rem 0;
+    }
+
+    /* Copyright */
+    .copyright {
+        color: rgba(255,255,255,0.5);
+    }
+
+    .footer-actions a {
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .footer-actions a:hover {
+        color: var(--gold) !important;
+    }
+
+    .back-to-top {
+        cursor: pointer;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .footer-section {
+            padding-top: 3rem !important;
+            padding-bottom: 2rem !important;
+        }
+        
+        .footer-firm-name {
+            font-size: 1.1rem;
+        }
+        
+        .footer-heading {
+            font-size: 0.95rem;
+        }
+        
+        .contact-info-footer {
+            margin-top: 1rem;
+        }
+        
+        .footer-actions {
+            text-align: left !important;
+            margin-top: 1rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .footer-heading {
+            margin-top: 1.5rem;
+        }
+        
+        .brand-symbol-footer {
+            width: 50px;
+            height: 50px;
+            font-size: 1rem;
+        }
+    }
