@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ayo-Okhiria & Ayo-Okhiria Legal</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about Ayo-Okhiria & Ayo-Okhiria Legal - Our history, founders, values, and commitment to legal excellence since 1985 in Delta State.">
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Professional Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --black: #121212;
+            --dark-gray: #1e1e1e;
+            --gold: #D4AF37;
+            --light-gold: #F4E4A6;
+            --white: #FFFFFF;
+            --gray: #666666;
+            --light-gray: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--black);
+            font-weight: 400;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        /* Header Styles */
+        .navbar {
+            background: var(--white);
+            padding: 0.8rem 0;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-symbol {
+            width: 40px;
+            height: 40px;
+            background: var(--black);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 3px;
+        }
+
+        .firm-name {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--black);
+            line-height: 1.1;
+        }
+
+        .firm-tagline {
+            font-size: 0.7rem;
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .nav-link {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--black) !important;
+            padding: 0.4rem 1rem !important;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .btn-book {
+            background: var(--gold);
+            color: var(--black);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.5rem 1.2rem;
+            border: none;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-book:hover {
+            background: #C19B2A;
+            transform: translateY(-1px);
+        }
+
+        /* About Page Hero */
+        .about-hero {
+          background-color: #352a08c2;
+            background-size: cover;
+            background-position: center;
+            padding: 5rem 0 4rem;
+            color: var(--white);
+            text-align: center;
+            background-blend-mode: multiply;
+        }
+
+        .about-hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-hero .lead {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Section Styles */
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--black);
+            margin-bottom: 1rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+        }
+
+        .text-center .section-title:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Founder Section */
+        .founder-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .founder-image {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .founder-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .founder-badge {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .founder-quote {
+            border-left: 3px solid var(--gold);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--gray);
+        }
+
+        /* History Timeline */
+        .history-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gold);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-year {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background: var(--white);
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--black);
+            font-size: 0.9rem;
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .timeline-content h4 {
+            color: var(--black);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Gallery Section */
+        .gallery-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            height: 250px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: var(--white);
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 5rem 0;
+            background: var(--light-gray);
+        }
+
+        .value-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 5px;
+            border: 1px solid rgba(0,0,0,0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--black) 0%, #2a2a2a 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section .lead {
+            color: rgba(255,255,255,0.8);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn-cta {
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-cta:hover {
+            background: #C19B2A;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        .footer-section {
+            background: var(--black);
+            color: var(--white);
+            padding: 3rem 0 2rem;
+        }
+
+        .footer-heading {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .timeline:before {
+                left: 25px;
+            }
+            
+            .timeline-item {
+                padding-left: 70px;
+            }
+            
+            .timeline-year {
+                width: 50px;
+                height: 50px;
+                font-size: 0.8rem;
+            }
+            
+            .founder-image img {
+                height: 400px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-hero {
+                padding: 3rem 0;
+            }
+            
+            .about-hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .value-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand p-0" href="index.html">
+                <div class="brand-container">
+                    <div class="brand-symbol">A&A</div>
+                    <div>
+                        <h1 class="firm-name">Ayo-Okhiria & Ayo-Okhiria Legal</h1>
+                        <p class="firm-tagline">Barristers & Solicitors • Notary Public</p>
+                    </div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practice-areas.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a href="https://calendly.com" class="btn btn-book" target="_blank">
+                            <i class="fas fa-calendar-alt me-1"></i>Book Consultation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero" style="background-image: url(images/2025-01-02.webp);">
+        <div class="container">
+            <h1>Our Story & Legacy</h1>
+            <p class="lead">
+                For nearly four decades, Ayo-Okhiria & Ayo-Okhiria Legal has been at the forefront 
+                of legal practice in Delta State, building a legacy of excellence, integrity, 
+                and unwavering commitment to our clients.
+            </p>
+            <div class="rating-badge d-inline-flex align-items-center">
+                <div class="stars me-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span>4.9/5.0 • 42 Google Reviews • Since 1985</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="founder-image">
+                        <img src="images/2024-09-10.webp" alt="Founder - Ayo-Okhiria & Ayo-Okhiria Legal" loading="lazy">
+                        <div class="founder-badge">
+                            Founder & Senior Partner
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="section-title">Our Founding Vision</h2>
+                    <p class="section-subtitle">
+                        Established in 1985 by Chief Ayo-Okhiria, our firm was built on the principles 
+                        of integrity, excellence, and client-focused service.
+                    </p>
+                    
+                    <div class="founder-quote">
+                        "Legal practice is not just about knowing the law, but about understanding 
+                        people and their needs. Every client deserves personalized attention and 
+                        strategic solutions that protect their interests and advance their goals."
+                    </div>
+                    
+                    <p>
+                        With a vision to create a legal practice that combined deep legal expertise 
+                        with genuine client care, Chief Ayo-Okhiria established what would become 
+                        one of Delta State's most respected law firms. His commitment to mentoring 
+                        young lawyers and building a team of dedicated professionals has created 
+                        a legacy that continues to thrive today.
+                    </p>
+                    
+                    <p>
+                        The firm's success is built on a foundation of trust, built case by case, 
+                        client by client, over nearly four decades of dedicated service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Timeline -->
+    <section class="history-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Journey</h2>
+                <p class="section-subtitle">
+                    A timeline of our growth and achievements since establishment
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1985</div>
+                    <div class="timeline-content">
+                        <h4>Foundation</h4>
+                        <p>Establishment of the firm by Chief Ayo-Okhiria at 37 Isoko Road, Ughelli. Began practice focusing on property law and civil litigation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h4>Expansion</h4>
+                        <p>Expanded practice areas to include corporate law and notary public services. Moved to larger office space to accommodate growing team.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h4>Digital Transition</h4>
+                        <p>Implemented modern case management systems and established online presence. Began serving corporate clients across Delta State.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h4>30th Anniversary</h4>
+                        <p>Celebrated 30 years of legal excellence. Recognized as one of Delta State's leading law firms with over 500 cases successfully handled.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h4>Present Day</h4>
+                        <p>Maintaining 4.9-star rating with 42 Google reviews. Continuing to provide exceptional legal services while embracing new technologies and practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Firm in Pictures</h2>
+                <p class="section-subtitle">
+                    A visual journey through our offices, team, and activities
+                </p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/2021-11-19.webp" alt="Main Office Reception" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Main Office Reception</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/2021-02-14.webp" alt="Legal Library" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Legal Reference Library</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/DSC_0602.webp" alt="Legal Team Meeting" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Team Strategy Session</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/2024-09-14.webp" alt="Court Preparation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Court Preparation Room</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/2022-06-11.webp" alt="Client Consultation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Client Consultation Room</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/2021-01-22.webp" alt="Awards & Recognition" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Awards & Recognition Wall</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/2021-11-19 (1).webp" alt="Awards & Recognition" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Awards & Recognition Wall</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/2025-12-24.webp" alt="Awards & Recognition" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Awards & Recognition Wall</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/2024-09-18.webp" alt="Awards & Recognition" loading="lazy">
+                    <div class="gallery-overlay">
+                        <p class="mb-0 small">Awards & Recognition Wall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">
+                    The principles that guide every aspect of our practice
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h4>Integrity</h4>
+                        <p class="small">Uncompromising ethical standards and honest communication with every client.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Excellence</h4>
+                        <p class="small">Commitment to the highest quality legal services and continuous improvement.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Client Focus</h4>
+                        <p class="small">Personalized attention and solutions tailored to each client's unique needs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Diligence</h4>
+                        <p class="small">Thorough preparation and meticulous attention to detail in every case.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience Our Commitment</h2>
+            <p class="lead">
+                Schedule a consultation with our experienced legal team to discuss 
+                how we can help protect your interests and achieve your goals.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="tel:07030251967" class="btn btn-cta">
+                    <i class="fas fa-phone-alt me-2"></i>Call: 0703 025 1967
+                </a>
+                <a href="https://calendly.com" class="btn btn-outline-light" target="_blank">
+                    <i class="fas fa-calendar-check me-2"></i>Book Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <footer class="footer-section bg-dark pt-5 pb-4">
+    <div class="container">
+        <!-- Main Footer Content -->
+        <div class="row g-4 mb-5">
+            <!-- Brand Column -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="footer-brand">
+                    <div class="brand-symbol-footer mb-3">
+                        <span class="symbol-a">A&</span>
+                        <span class="symbol-a">A</span>
+                    </div>
+                    <h3 class="footer-firm-name mb-3">Ayo-Okhiria & Ayo-Okhiria Legal</h3>
+                    <p class="footer-tagline mb-4">
+                        Barristers & Solicitors • Notary Public • Consultants • Analyst/Researchers • Draftsmith
+                    </p>
+                    
+                    <!-- Google Reviews -->
+                    <div class="footer-reviews mb-4">
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="stars me-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-white fw-medium">4.9/5.0</span>
+                        </div>
+                        <p class="small text-gray mb-0">42 Google Reviews • Established 1985</p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <h6 class="text-white mb-3">Connect With Us</h6>
+                        <div class="social-icons d-flex gap-3">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://g.page/r/CQhX7QgVqPWiEAE" class="social-icon" target="_blank">
+                                <i class="fab fa-google"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-heading mb-4">Quick Links</h4>
+                <ul class="footer-links list-unstyled">
+                    <li class="mb-2"><a href="index.html">Home</a></li>
+                    <li class="mb-2"><a href="about.html">About Us</a></li>
+                    <li class="mb-2"><a href="practice-areas.html">Practice Areas</a></li>
+                    <li class="mb-2"><a href="team.html">Our Team</a></li>
+                    <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    <li class="mb-2"><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <!-- Practice Areas -->
+            <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <h4 class="footer-heading mb-4">Practice Areas</h4>
+                <ul class="footer-links list-unstyled">
+                    <li class="mb-2"><a href="#">Corporate Law</a></li>
+                    <li class="mb-2"><a href="#">Property Law</a></li>
+                    <li class="mb-2"><a href="#">Civil Litigation</a></li>
+                    <li class="mb-2"><a href="#">Notary Services</a></li>
+                    <li class="mb-2"><a href="#">Legal Drafting</a></li>
+                    <li class="mb-2"><a href="#">Contract Review</a></li>
+                    <li><a href="#">Legal Consultation</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-4">
+                <h4 class="footer-heading mb-4">Contact Us</h4>
+                <div class="contact-info-footer">
+                    <div class="contact-item d-flex mb-3">
+                        <div class="contact-icon me-3">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-medium text-white">Address</p>
+                            <p class="mb-0 small text-gray">
+                                37, Isoko Road, by Edoge Junction,<br>
+                                Top floor, Ughelli,<br>
+                                Delta State 333105
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item d-flex mb-3">
+                        <div class="contact-icon me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-medium text-white">Phone</p>
+                            <p class="mb-0 small text-gray">
+                                <a href="tel:07030251967" class="text-gray">0703 025 1967</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item d-flex mb-3">
+                        <div class="contact-icon me-3">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-medium text-white">Business Hours</p>
+                            <p class="mb-0 small text-gray">
+                                Mon-Fri: 7:30AM - 6:00PM<br>
+                                Saturday: 9:00AM - 2:00PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item d-flex mb-3">
+                        <div class="contact-icon me-3">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <p class="mb-0 fw-medium text-white">Book Consultation</p>
+                            <p class="mb-0 small text-gray">
+                                <a href="https://calendly.com" class="text-gold" target="_blank">
+                                    Schedule online via Calendly
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider my-4">
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <p class="copyright mb-0 small text-gray">
+                    © <span id="currentYear"></span> Ayo-Okhiria & Ayo-Okhiria Legal. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <div class="footer-actions">
+                    <a href="sitemap.html" class="text-gray small me-3">Sitemap</a>
+                    <a href="#top" class="back-to-top text-gray small">
+                        <i class="fas fa-arrow-up me-1"></i>Back to top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Set current year in copyright
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Sticky header background
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = 'var(--white)';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
