@@ -1,0 +1,472 @@
+
+        :root {
+            --black: #121212;
+            --dark-gray: #1e1e1e;
+            --gold: #D4AF37;
+            --light-gold: #F4E4A6;
+            --white: #FFFFFF;
+            --gray: #666666;
+            --light-gray: #F5F5F5;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--black);
+            font-weight: 400;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+        }
+
+        /* Header */
+        .navbar {
+            background: var(--white);
+            padding: 0.8rem 0;
+            box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-symbol {
+            width: 40px;
+            height: 40px;
+            background: var(--black);
+            color: var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border-radius: 3px;
+        }
+
+        .firm-name {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0;
+            color: var(--black);
+            line-height: 1.1;
+        }
+
+        .firm-tagline {
+            font-size: 0.7rem;
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .nav-link {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--black) !important;
+            padding: 0.4rem 1rem !important;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .btn-book {
+            background: var(--gold);
+            color: var(--black);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.5rem 1.2rem;
+            border: none;
+            border-radius: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-book:hover {
+            background: #C19B2A;
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-blend-mode: multiply;
+            background-color: #201f1fd6;
+        }
+
+        .hero-content {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .rating-badge i {
+            color: var(--gold);
+        }
+
+        .hero-title {
+            font-size: 2.2rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .accent-text {
+            color: var(--gold);
+            position: relative;
+        }
+
+        .hero-subtitle {
+            color: var(--light-gold);
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .services-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .service-tag {
+            background: rgba(255,255,255,0.05);
+            color: var(--light-gold);
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.2s ease;
+        }
+
+        .service-tag:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .btn-call {
+            background: var(--gold);
+            color: var(--black);
+            padding: 0.8rem 1.8rem;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-call:hover {
+            background: #C19B2A;
+            transform: translateY(-1px);
+            color: var(--black);
+        }
+
+        .btn-consult {
+            background: transparent;
+            color: var(--white);
+            padding: 0.8rem 1.8rem;
+            border-radius: 3px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.2s ease;
+        }
+
+        .btn-consult:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--gold);
+            color: var(--white);
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.03);
+            padding: 1.2rem;
+            border-radius: 5px;
+            border-left: 3px solid var(--gold);
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-info p {
+            margin: 0.3rem 0;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .contact-info i {
+            color: var(--gold);
+            width: 16px;
+            margin-right: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-call, .btn-consult {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            .services-tags {
+                gap: 0.5rem;
+            }
+            
+            .service-tag {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-section {
+                min-height: 80vh;
+            }
+            
+            .hero-title {
+                font-size: 1.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 0.85rem;
+            }
+            
+            .navbar-brand {
+                font-size: 0.9rem;
+            }
+            
+            .contact-info {
+                padding: 1rem;
+            }
+        }
+     /* About Section Styles */
+    .about-section {
+        background: var(--light-gray);
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--black);
+        margin-bottom: 1rem;
+    }
+
+    .text-gold {
+        color: var(--gold) !important;
+    }
+
+    .text-gray {
+        color: var(--gray) !important;
+    }
+
+    .lead {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--gray);
+        line-height: 1.6;
+    }
+
+    /* Experience Badge */
+    .experience-badge {
+        position: absolute;
+        bottom: -20px;
+        left: 20px;
+        background: var(--gold);
+        color: var(--black);
+        padding: 0.8rem 1.2rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    .experience-years {
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .experience-text {
+        font-size: 0.75rem;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    /* Stat Cards */
+    .stat-card {
+        background: var(--white);
+        border: 1px solid rgba(0,0,0,0.08) !important;
+        transition: transform 0.2s ease;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--gold) !important;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-bottom: 0.3rem;
+    }
+
+    .text-small {
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    .stat-label {
+        color: var(--gray);
+        font-size: 0.75rem;
+    }
+
+    /* Value Items */
+    .value-item {
+        padding: 0.5rem;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+    }
+
+    .value-item:hover {
+        background: rgba(212, 175, 55, 0.05);
+    }
+
+    .value-icon {
+        font-size: 1.1rem;
+    }
+
+    /* Specialization Tags */
+    .specialization-tag {
+        background: var(--white);
+        color: var(--gray);
+        padding: 0.4rem 0.8rem;
+        border-radius: 3px;
+        font-size: 0.8rem;
+        border: 1px solid rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
+    }
+
+    .specialization-tag:hover {
+        background: var(--gold);
+        color: var(--black);
+        border-color: var(--gold);
+    }
+
+    /* Buttons */
+    .btn-outline-dark {
+        border: 1px solid var(--dark-gray);
+        color: var(--dark-gray);
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+    }
+
+    .btn-outline-dark:hover {
+        background: var(--dark-gray);
+        color: var(--white);
+    }
+
+    .btn-gold {
+        background: var(--gold);
+        color: var(--black);
+        border: none;
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    .btn-gold:hover {
+        background: #C19B2A;
+        color: var(--black);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .about-section {
+            padding: 3rem 0;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+        }
+        
+        .experience-badge {
+            left: 10px;
+            padding: 0.6rem 1rem;
+        }
+        
+        .experience-years {
+            font-size: 1.5rem;
+        }
+        
+        .specialization-tag {
+            font-size: 0.75rem;
+            padding: 0.3rem 0.6rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .section-title {
+            font-size: 1.3rem;
+        }
+        
+        .lead {
+            font-size: 0.9rem;
+        }
+        
+        .about-cta {
+            text-align: center;
+        }
+        
+        .about-cta .btn {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
